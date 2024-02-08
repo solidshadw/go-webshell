@@ -110,7 +110,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func main() {
     var ip, port string
     flag.StringVar(&ip, "ip", "", "IP")
-    flag.StringVar(&port, "port", "8080", "Port")
+    flag.StringVar(&port, "port", "80", "Port")
     flag.Parse()
 
     http.HandleFunc("/", handler)
